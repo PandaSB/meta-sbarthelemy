@@ -26,6 +26,7 @@ do_install () {
   install -d ${D}/${libdir}/fonts
 
   install -m 0644 ${S}/lib/librgbmatrix.so.1 ${D}/${libdir}
+  install -m 0644 ${S}/lib/librgbmatrix.a ${D}/${libdir}
   install -m 0644 ${S}/include/led-matrix.h ${D}/${includedir}
   install -m 0644 ${S}/include/gpio.h ${D}/${includedir}
   install -m 0644 ${S}/include/canvas.h ${D}/${includedir}  
